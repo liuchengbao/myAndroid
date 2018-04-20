@@ -29,6 +29,10 @@ class AboutMe extends Component {
     Actions.qrCode();
   }
 
+  moreInformation() {
+    Actions.moreInformation()
+  }
+
   render() {
     const {information} = this.props.getPersonalInformation;
     return (
@@ -81,7 +85,9 @@ class AboutMe extends Component {
             <Text style={styles.rightArrow}>&#xe64d;</Text>
           </View>
         </TouchableOpacity>
-        <TouchableOpacity>
+        <TouchableOpacity
+          onPress={() => this.moreInformation()}
+        >
           <View style={styles.singleBlock}>
             <Text style={styles.title}>更多</Text>
             <Text style={styles.rightArrow}>&#xe64d;</Text>

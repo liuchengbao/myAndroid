@@ -102,6 +102,7 @@ class QrCode extends Component {
                 <Text style={styles.qrCodeHeaderInformationName}>{information.name}</Text>
                 <Text style={{fontSize: 12}}>{information.place}</Text>
               </View>
+              <Text style={[styles.font, {color: information.sex === '男' ? '#01a8fe' : '#fa4ed3'}]}>&#xe666;</Text>
             </View>
             <View style={styles.qrCode}>
               <QRCode
@@ -189,6 +190,12 @@ const styles = StyleSheet.create({
     fontSize: 20,
     color: '#FFF',
     lineHeight: 20
+  },
+  font: {
+    fontFamily: 'cloud',
+    fontSize: 18,
+    paddingLeft: 5,
+    paddingTop: 3
   },
   fontSize16: {
     fontSize: 16,

@@ -13,7 +13,9 @@ const initialState = {
     avatar: ImgList.img.avatar,
     name: '。。。。',
     PName: 'bao-love-sha',
-    place: '江西 宜春'
+    sex: '男',
+    place: '江西 宜春',
+    signature: 'you are my sunshine'
   }
 };
 

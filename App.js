@@ -34,6 +34,8 @@ import AboutMe from './app/pages/userInfo/about_me';
 import Avatar from './app/pages/userInfo/avatar';
 import Name from './app/pages/userInfo/name';
 import QrCode from './app/pages/userInfo/qr_code';
+import MoreInformation from './app/pages/userInfo/more_information';
+import Gender from './app/pages/userInfo/gender';
 
 console.disableYellowBox = true;
 
@@ -211,6 +213,22 @@ export default class App extends Component {
                     hideTabBar
                     swipeEnabled={false}
                     component={QrCode}
+                  />
+                  <Scene
+                    key="moreInformation"
+                    title="更多"
+                    hideNavBar
+                    hideTabBar
+                    swipeEnabled={false}
+                    component={MoreInformation}
+                  />
+                  <Scene
+                    key="gender"
+                    title="性别"
+                    hideNavBar
+                    hideTabBar
+                    swipeEnabled={false}
+                    component={Gender}
                   />
                 </Stack>
               </Tabs>

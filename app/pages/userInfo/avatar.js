@@ -15,7 +15,7 @@ import Modal from 'react-native-modalbox';
 
 import {Actions} from 'react-native-router-flux';
 import ImagePicker from 'react-native-image-crop-picker';
-import {changeAvatar} from '../../reduxActions/personalInformationAction';
+import {changeInformation} from '../../reduxActions/personalInformationAction';
 
 const {width} = Dimensions.get('window');
 
@@ -53,7 +53,7 @@ class Avatar extends Component {
     }).then((image) => {
       const informationData = information;
       informationData.avatar = {uri: image.path};
-      this.props.dispatch(changeAvatar(informationData));
+      this.props.dispatch(changeInformation(informationData));
       this.setState({
         isOpen: false
       });
@@ -68,7 +68,7 @@ class Avatar extends Component {
     }).then((image) => {
       const informationData = information;
       informationData.avatar = {uri: image.path};
-      this.props.dispatch(changeAvatar(informationData));
+      this.props.dispatch(changeInformation(informationData));
       this.setState({
         isOpen: false
       });

@@ -12,7 +12,7 @@ export const GET_INFORMATION = 'GET_INFORMATION'; // 获取个人信息
 // export const DELETE_TODOLIST = 'DELETE_TODOLIST'; // 删除todolist
 
 
-export function changeAvatar(data) { // 改变头像
+export function changeInformation(data) { // 改变信息
   return {
     type: CHANGE_AVATAR,
     data
